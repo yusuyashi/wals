@@ -1,3 +1,28 @@
-.red-word {
-  color: red;
+header {
+  background-color: #333; /* ヘッダーの背景色を設定 */
+  color: white; /* テキストの色を設定 */
+  padding: 10px 20px; /* 上下左右の余白を設定 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影の設定 */
+}
+
+nav {
+  display: flex; /* ナビゲーションメニューを横並びに配置 */
+  justify-content: space-between; /* メニューアイテムの間に均等なスペースを配置 */
+  align-items: center; /* メニューアイテムを垂直方向に中央揃え */
+}
+
+nav img {
+  height: 50px; /* ロゴの高さを設定 */
+  /* もしくは幅を指定 */
+  /* width: 100px; */
+}
+
+nav a {
+  color: white; /* ナビゲーションリンクの色を設定 */
+  text-decoration: none; /* リンクの下線を削除 */
+  margin-left: 20px; /* リンク間の余白を設定 */
+}
+
+nav a:hover {
+  text-decoration: underline; /* ホバー時にリンクの下線を表示 */
 }
