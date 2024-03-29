@@ -1,28 +1,60 @@
-header {
-  background-color: #333; /* ヘッダーの背景色を設定 */
-  color: white; /* テキストの色を設定 */
-  padding: 10px 20px; /* 上下左右の余白を設定 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影の設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  display: flex; /* ナビゲーションメニューを横並びに配置 */
-  justify-content: space-between; /* メニューアイテムの間に均等なスペースを配置 */
-  align-items: center; /* メニューアイテムを垂直方向に中央揃え */
+header {
+  background-color: #EC715F; /* ヘッダーの背景色を設定 */
+  color: #FAFAFA; /* テキストの色を設定 */
+  width: 100%; /* 横幅いっぱい */
+  height: 70px; /* 高さ70px */
 }
 
 nav img {
-  height: 50px; /* ロゴの高さを設定 */
+  height: 70px; /* ロゴの高さを設定 */
   /* もしくは幅を指定 */
   /* width: 100px; */
 }
-
-nav a {
-  color: white; /* ナビゲーションリンクの色を設定 */
-  text-decoration: none; /* リンクの下線を削除 */
-  margin-left: 20px; /* リンク間の余白を設定 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1024px;
+  margin: 0 auto;
 }
 
-nav a:hover {
-  text-decoration: underline; /* ホバー時にリンクの下線を表示 */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin-right: 30px;
+}
+
+.nav-list-item:last-child {
+  margin-right: 0;
+}
+
+.nav-list-item a {
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+.main-visual {
+  width: 100%; /* 横幅いっぱい */
+  height: 650px; /* 高さ650px */
+}
+
+.main {
+  width: 100%; /* 横幅いっぱい */
+  height: 1400px; /* 高さ1400px（多めに設定） */
+  background-color: green; /* 背景色green */
+}
+
+.footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 120px; /* 高さ120px */
+  background-color: blue; /* 背景色blue */
 }
